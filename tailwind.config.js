@@ -51,6 +51,10 @@ module.exports = {
                 'secondary': '#1F1645',
             },
             backgroundImage: {
+                'gradient-to-new-wh': 'linear-gradient(to top, #F7F8FD 0%, #D1E6F4 100%)',
+                'gradient-to-new-wh-atl': 'linear-gradient(to top, #E7F5FF 0%, #609EC8 100%)',
+                'gradient-to-new-dark': 'linear-gradient(to top, #101427 0%, #2D3D6A 100%)',
+                'gradient-to-new-atl-dark': 'linear-gradient(to top, #011A2B 0%, #045B96 100%)',
                 'gradient-to-white': 'linear-gradient(to top, #FFF 0%, #FFF 100%)',
                 'gradient-to-how': 'linear-gradient(to top, #F1F7FE 0%, #D5E9F9 100%)',
                 'gradient-to-r': 'linear-gradient(to right, #00ABDC, #0578D0)',

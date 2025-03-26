@@ -908,10 +908,6 @@ html,
   display: inline-flex;
 }
 
-.table{
-  display: table;
-}
-
 .grid{
   display: grid;
 }
@@ -1042,12 +1038,12 @@ html,
   max-height: 20rem;
 }
 
-.min-h-screen{
-  min-height: 100vh;
-}
-
 .min-h-\[100px\]{
   min-height: 100px;
+}
+
+.min-h-screen{
+  min-height: 100vh;
 }
 
 .w-1{
@@ -1975,16 +1971,6 @@ html,
   background-color: rgb(255 255 255 / 0.05);
 }
 
-.bg-blue-500{
-  --tw-bg-opacity: 1;
-  background-color: rgb(59 130 246 / var(--tw-bg-opacity, 1));
-}
-
-.bg-gray-100{
-  --tw-bg-opacity: 1;
-  background-color: rgb(243 244 246 / var(--tw-bg-opacity, 1));
-}
-
 .bg-opacity-0{
   --tw-bg-opacity: 0;
 }
@@ -2043,6 +2029,14 @@ html,
 
 .bg-gradient-to-impact{
   background-image: linear-gradient(to right, #AF1469, #74184A);
+}
+
+.bg-gradient-to-new-wh{
+  background-image: linear-gradient(to top, #F7F8FD 0%, #D1E6F4 100%);
+}
+
+.bg-gradient-to-new-wh-atl{
+  background-image: linear-gradient(to top, #E7F5FF 0%, #609EC8 100%);
 }
 
 .bg-gradient-to-r{
@@ -2363,11 +2357,6 @@ html,
   padding-bottom: 1rem;
 }
 
-.py-5{
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
-}
-
 .py-6{
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
@@ -2535,10 +2524,6 @@ html,
   font-weight: 600;
 }
 
-.uppercase{
-  text-transform: uppercase;
-}
-
 .leading-relaxed{
   line-height: 1.625;
 }
@@ -2638,6 +2623,11 @@ html,
   color: rgb(0 0 0 / var(--tw-text-opacity, 1));
 }
 
+.text-blue-600{
+  --tw-text-opacity: 1;
+  color: rgb(37 99 235 / var(--tw-text-opacity, 1));
+}
+
 .text-emerald-500{
   --tw-text-opacity: 1;
   color: rgb(16 185 129 / var(--tw-text-opacity, 1));
@@ -2719,11 +2709,6 @@ html,
 .text-yellow-500{
   --tw-text-opacity: 1;
   color: rgb(234 179 8 / var(--tw-text-opacity, 1));
-}
-
-.text-blue-600{
-  --tw-text-opacity: 1;
-  color: rgb(37 99 235 / var(--tw-text-opacity, 1));
 }
 
 .underline{
@@ -3036,11 +3021,6 @@ html,
 .hover\:bg-primary:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(0 170 206 / var(--tw-bg-opacity, 1));
-}
-
-.hover\:bg-blue-600:hover{
-  --tw-bg-opacity: 1;
-  background-color: rgb(37 99 235 / var(--tw-bg-opacity, 1));
 }
 
 .hover\:bg-opacity-75:hover{
@@ -3388,11 +3368,6 @@ html,
   border-color: rgb(156 163 175 / var(--tw-border-opacity, 1));
 }
 
-.dark\:border-gray-700:is(.dark *){
-  --tw-border-opacity: 1;
-  border-color: rgb(55 65 81 / var(--tw-border-opacity, 1));
-}
-
 .dark\:bg-\[\#000\]:is(.dark *){
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity, 1));
@@ -3522,16 +3497,16 @@ html,
   background-color: transparent;
 }
 
+.dark\:bg-white\/10:is(.dark *){
+  background-color: rgb(255 255 255 / 0.1);
+}
+
 .dark\:bg-white\/20:is(.dark *){
   background-color: rgb(255 255 255 / 0.2);
 }
 
 .dark\:bg-white\/5:is(.dark *){
   background-color: rgb(255 255 255 / 0.05);
-}
-
-.dark\:bg-white\/10:is(.dark *){
-  background-color: rgb(255 255 255 / 0.1);
 }
 
 .dark\:bg-gradient-dark:is(.dark *){
@@ -3552,6 +3527,10 @@ html,
 
 .dark\:bg-gradient-to-l:is(.dark *){
   background-image: linear-gradient(to right, #24386B, #2F56AC);
+}
+
+.dark\:bg-gradient-to-new-dark:is(.dark *){
+  background-image: linear-gradient(to top, #101427 0%, #2D3D6A 100%);
 }
 
 .dark\:text-\[\#00B6DE\]:is(.dark *){
@@ -3577,11 +3556,6 @@ html,
 .dark\:text-black:is(.dark *){
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity, 1));
-}
-
-.dark\:text-gray-400:is(.dark *){
-  --tw-text-opacity: 1;
-  color: rgb(156 163 175 / var(--tw-text-opacity, 1));
 }
 
 .dark\:text-primary:is(.dark *){
@@ -3763,16 +3737,16 @@ html,
     flex-direction: row;
   }
 
+  .md\:gap-3{
+    gap: 0.75rem;
+  }
+
   .md\:gap-6{
     gap: 1.5rem;
   }
 
   .md\:gap-8{
     gap: 2rem;
-  }
-
-  .md\:gap-3{
-    gap: 0.75rem;
   }
 
   .md\:space-x-6 > :not([hidden]) ~ :not([hidden]){
@@ -3998,10 +3972,6 @@ html,
     flex-direction: row;
   }
 
-  .lg\:flex-nowrap{
-    flex-wrap: nowrap;
-  }
-
   .lg\:items-start{
     align-items: flex-start;
   }
@@ -4059,16 +4029,6 @@ html,
   .lg\:py-36{
     padding-top: 9rem;
     padding-bottom: 9rem;
-  }
-
-  .lg\:px-6{
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-  }
-
-  .lg\:px-2{
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
   }
 
   .lg\:text-left{
@@ -4163,10 +4123,6 @@ html,
   .xl\:justify-center{
     justify-content: center;
   }
-}
-
-.rtl\:text-right:where([dir="rtl"], [dir="rtl"] *){
-  text-align: right;
 }
 
 .\[\&\[x-cloak\]\]\:hidden[x-cloak]{
